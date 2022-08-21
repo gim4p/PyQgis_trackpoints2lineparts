@@ -1,4 +1,4 @@
 # PyQgis_trackpoints2lineparts
 
-(img/trackpoints2lineparts.png)
+![points2lineparts](img/trackpoints2lineparts.png)
 
