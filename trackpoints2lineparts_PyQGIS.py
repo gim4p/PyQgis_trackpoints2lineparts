@@ -3,7 +3,7 @@ from PyQt5.QtCore import QVariant
 import numpy as np
 
 ##### SET what we need
-nth_points2line = 20  ## every nth points is one profile
+nth_points2line = 20  ##########!!!!!!!!! manually SPECIFY every nth points is one profile
 
 #####
 # laye_r = QgsProject.instance().mapLayersByName("path/shapefilename.shp")[0]
@@ -54,7 +54,7 @@ if cnt == len(layer_in) and lineidx_list[-1] != len(layer_in):
 
 #### insert idices into index list for coordinates that have big gaps inbetween
 gaps = np.sqrt((np.diff(X_calc)) ** 2 + (np.diff(Y_calc)) ** 2)
-idx_gaps = list(np.where(gaps > np.median(gaps) * 3)[0]) # specify how big the gap can be
+idx_gaps = list(np.where(gaps > np.median(gaps) * 3)[0]) ##########!!!!!!!!! manually SPECIFY how big the gap can be
 lineidx_list = np.sort(lineidx_list + [x + 1 for x in idx_gaps])
 
 #### create temporary line shapefile and put lines and attributes into it
