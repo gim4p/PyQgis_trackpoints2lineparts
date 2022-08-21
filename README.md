@@ -1,4 +1,4 @@
 # PyQgis_trackpoints2lineparts
 
-![cruisetrack1](img/qgis-plugins-screenshot.png)
+(img/trackpoints2lineparts.png)
 
